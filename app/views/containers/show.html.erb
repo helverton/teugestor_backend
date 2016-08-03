@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Container:</strong>
+  <%= @container.container %>
+</p>
+
+<p>
+  <strong>Bl:</strong>
+  <%= @container.bl %>
+</p>
+
+<p>
+  <strong>Local:</strong>
+  <%= @container.local %>
+</p>
+
+<p>
+	<%= image_tag @container.picture.url %>
+</p>
+
+<%= link_to 'Edit', edit_container_path(@container) %> |
+<%= link_to 'Back', containers_path %>
